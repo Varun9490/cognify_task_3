@@ -1,0 +1,47 @@
+/* Dark aurora theme styles with Tailwind CSS */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+  @apply text-4xl font-bold;
+}
+
+header p {
+  @apply text-xl mt-2;
+}
+
+.card {
+  @apply bg-gray-800 rounded-lg overflow-hidden shadow-lg;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  @apply w-full;
+}
+
+.card:hover {
+  @apply transform scale-105 shadow-xl;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.card-title {
+  @apply text-2xl font-semibold mb-2;
+}
+
+.card-text {
+  @apply text-lg mb-4;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-lg;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  @apply bg-blue-400;
+  transform: scale(1.05);
+}
